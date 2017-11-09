@@ -59,44 +59,13 @@ var months = [{
   There should be 365 print statements, one for each day in a year.
 */
 
-for( var month = 0; month < months.length; month++){
-    for ( var day = 1; day < months[month].days + 1; day++){
-        if(month === 0){
-            console.log(`January ${day}`);
-        }
-        if(month === 1){
-            console.log(`February ${day}`);
-        }
-        if(month === 2){
-            console.log(`March ${day}`);
-        }
-        if(month === 3){
-            console.log(`April ${day}`);
-        }
-        if(month === 4){
-            console.log(`May ${day}`);
-        }
-        if(month === 5){
-            console.log(`June ${day}`);
-        }
-        if(month === 6){
-            console.log(`July ${day}`);
-        }
-        if(month === 7){
-            console.log(`August ${day}`);
-        }
-        if(month === 8){
-            console.log(`September ${day}`);
-        }
-        if(month === 9){
-            console.log(`October ${day}`);
-        }
-        if(month === 10){
-            console.log(`November ${day}`);
-        }
-        if(month === 11){
-            console.log(`December ${day}`);
-        }
+// i corresponds to the index of the month, e.g. i=0 is January
+for( var i = 0; i < months.length; i++){
+
+
+    for ( var day = 1; day < months[i].days + 1; day++){
+
+        console.log(months[i].name + ' ' + day);
 
     }
 }
@@ -138,7 +107,7 @@ for( var i= 0; i < 24; i++){
 
         //Second
         for( var k = 0; k < 60; k++){
-            console.log(`${i}:${j}:${k}`);
+            //console.log(`${i}:${j}:${k}`);
         }
     }
 }
